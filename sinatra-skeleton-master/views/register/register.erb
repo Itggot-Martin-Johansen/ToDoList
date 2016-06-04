@@ -1,0 +1,17 @@
+<div id="registration">
+  <h1>Registration</h1>
+    <%= flash[:error] %>
+    <form action="/register_account" method="post">
+      <div id="loginpass">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        Re-write Password: <input type ="password" name="rewrite_password"><br>
+        Email: <input type="text" name="email"><br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+        <a href="#"><button>Submit</button></a>
+      </div>
+    </form>
+</div>
+

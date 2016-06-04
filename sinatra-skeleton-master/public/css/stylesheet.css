@@ -1,0 +1,507 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 55px;
+    font-family: "Open Sans", "Lato", Helvetica, Arial, Verdana, Sans-Serif, Serif;
+    background-color: #fefefe;
+}
+
+#wrapper
+{
+    width: 100%;
+}
+
+#title
+{
+    width: 100%;
+    height: 55px;
+    background-color: #fefefe;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 55px;
+}
+
+header
+{
+    display: table;
+    width: 100%;
+    background-color: #bbe4f2;
+}
+
+header > div
+{
+    display: table-row;
+    height: 55px;
+}
+
+#logged_in_register
+{
+    display: table-cell;
+}
+
+#logged_in_register > form
+{
+    display: block;
+    width: 377px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+#register
+{
+    display: table-cell;
+}
+
+#register > form
+{
+    display: block;
+    width: 377px;
+    height: 70px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#register > form > input
+{
+    box-sizing: border-box;
+    width: 166px;
+    height: 25px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #fefefe;
+    background-color: #fefefe;
+    font-size: 11pt;
+    color: #1a1a1a;
+    transition: background-color .21s, border-color .21s;
+}
+
+#register > form > input:focus
+{
+    outline: none;
+    background-color: #fefefe;
+    border-color: #1a1a1a;
+}
+
+#register > form > input:not(:first-child)
+{
+    margin-left: 13px;
+}
+
+#register > form > input:nth-child(3)
+{
+    margin-left: 112px;
+}
+
+#register > form > a
+{
+    margin-left: 14px;
+    float: left;
+}
+
+header > div > nav
+{
+    display: table-cell;
+    width: 100%;
+    line-height: 114px;
+    background-color: #1a1a1a;
+}
+
+header > div > nav > div
+{
+    display: block;
+    margin-left: 220px;
+}
+
+header > div > nav > div > a
+{
+    display: inline-block;
+    height: 131px;
+    width: 233px;
+    background-color: #1a1a1a;
+    text-align: center;
+    font-size: 13pt;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fefefe;
+    transition: background-color .21s, color .21s;
+}
+
+header > div > nav > div > a.selected
+{
+    background-color: #fefefe;
+    color: #1a1a1a;
+}
+
+header > div > nav > div > a:hover
+{
+    background-color: #fefefe;
+    color: #1a1a1a;
+}
+
+main
+{
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 100%;
+}
+
+main > #pic
+{
+    width: 100%;
+}
+
+main > #splash
+{
+    display: table;
+    width: 100%;
+    height: 377px;
+}
+
+main > #splash > div
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 34pt;
+    font-weight: 800;
+}
+
+main > #splash > div > span
+{
+    display: block;
+    font-weight: 300;
+    font-size: 18pt;
+}
+
+main > article
+{
+    display: block;
+    margin: 34px auto 0 auto;
+    width: 610px;
+}
+
+main > article:not(:first-of-type)
+{
+    margin-top: 55px;
+}
+
+main > article > .title
+{
+    font-size: 24pt;
+    font-weight: 300;
+}
+
+main > article > .content
+{
+    font-size: 13pt;
+}
+
+main > article > .info
+{
+    width: 100%;
+}
+
+main > article > .info
+{
+    width: 100%;
+}
+
+main > article > .info > div
+{
+    display: inline-block;
+}
+
+main > article > .info > div:last-child
+{
+    float: right;
+}
+
+/* Vet inte om jag hinner ha med (databas)
+#subscribe
+{
+    width: 100%;
+    background-color: black;
+    height: 55px;
+    margin-top: 34px;
+}
+
+#subscribe > button
+{
+    display:flex;
+    height: 55px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#subscribe > button:hover
+{
+    cursor: pointer;
+    color: deepskyblue;
+}
+*/
+
+#footer
+{
+    width: 100%;
+    height: 55px;
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    margin-top: 100px;
+}
+
+#footer > h3
+{
+    float: right;
+    padding-right: 50px;
+    padding-top: 13px;
+}
+
+/* This is for register.erb */
+
+#registration > h1
+{
+    text-align: center;
+}
+
+#registration > form
+{
+    line-height: 40px;
+    height: 350px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+#registration > form > #loginpass
+{
+    height: 500px;
+}
+
+#registration > form > #loginpass > input
+{
+    margin-left: 2px;
+}
+
+#registration > form > #loginpass > input:not(:nth-child(5)) /* Tydligen så kan man inte ta margin på alla utom ett och sedan ta liten margin, behöver egentligen inte ":not" här men skitsamma :P */
+{
+    margin-left: 62px;
+}
+
+#registration > form > #loginpass > input:nth-child(3)
+{
+    margin-left: 66px;
+}
+
+#registration > form > #loginpass > input:nth-child(7)
+{
+    margin-left: 96px;
+}
+
+#registration > form > #loginpass > input:nth-child(9)
+{
+    margin-left: 130px;
+}
+
+#registration > form > #loginpass > input:nth-child(11)
+{
+    margin-left: 130px;
+}
+
+#registration > form > #loginpass > input:nth-child(13)
+{
+    margin-left: 130px;
+}
+
+#registration > form > #loginpass > a
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* This is for account.erb */
+
+#account_name
+{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+#account_name > h1
+{
+    text-align: center;
+}
+
+#ranks
+{
+    width: 100%;
+    text-align: center;
+}
+
+.onoffswitch
+{
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.onoffswitch-checkbox
+{
+    display: none;
+}
+
+.onoffswitch-label
+{
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner
+{
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after
+{
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before
+{
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after
+{
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch
+{
+    display: block; width: 21px; margin: 4.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner
+{
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch
+{
+    right: 0;
+}
+
+/* This is for about.erb */
+
+#about
+{
+    width: 100%;
+    height: 950px;
+}
+
+#about > h1
+{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#main > .menu
+{
+    width: 100%;
+    max-width: 950px;
+    height: 377px;
+    max-height: 377px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main > .menu > .image
+{
+    vertical-align: top;
+    display: inline-table;
+    width: 377px;
+    height: 377px;
+    background-size: 100%;
+    background-position: 0;
+}
+#main > .menu > .image:not(:first-child)
+{
+    margin-left: 34px;
+}
+
+#main > .menu > .image > div
+{
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+    transition: background-color .5s, opacity .2s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+#main > .menu > .image > div:hover
+{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+
+#main > .menu > .image > div:hover > div
+{
+    transform: scale(1.2, 1.2);
+}
+
+#main > .menu > .image > div > div
+{
+    transition: transform .5s;
+    color: #fefefe;
+    font-size: 24pt;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#about > #text
+{
+    height: 600px;
+    width: 960px;
+    margin-left: 475px;
+}
+
+#about > #text > h1
+{
+    text-align: center;
+}

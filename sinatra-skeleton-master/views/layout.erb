@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>
+    Leamhack
+  </title>
+
+  <script src="/js/slider.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+    <div>
+      <div>
+        <% if session[:user_id] != nil %>
+            <div id="logged_in_register">
+              <form action="/sign_out" method="post">
+                <input type="submit" value="Log out">
+              </form>
+            </div>
+
+        <% else %>
+            <div id="register">
+
+              <form action="/login_account" method="post">
+                <input name="username" placeholder="Username">
+                <input name="password" placeholder="Password">
+                <input type="submit" value="Log in">
+                <a class="button" href="/register">Register</a>
+              </form>
+            </div>
+        <% end %>
+      </div>
+
+      <nav>
+        <div>
+          <a href="index.erb">
+            Blog
+          </a>
+          <a href="#">
+            Category
+          </a>
+          <a href="/about">
+            About
+          </a>
+          <% if session[:user_id] != nil %>
+              <a href="/account">
+                Account
+              </a>
+          <% end %>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <%= yield %>
+
+  <div id ="footer">
+    <h3>&copy; copyrighted content by Martin Johansen</h3>
+  </div>
+</div>
+</body>

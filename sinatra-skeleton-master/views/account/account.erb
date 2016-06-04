@@ -1,0 +1,17 @@
+ <div id="account_name">
+    <h1>Profile of </h1><br>
+    <% if session[:user_id] != nil %>
+    <h2><%= @account %></h2>
+     <h2> <% session[:user_id] %></h2>
+        <% end %>
+  </div>
+  <div id="ranks">
+    <h2>Account Ranks</h2>
+  </div>
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+      <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+  </div>
