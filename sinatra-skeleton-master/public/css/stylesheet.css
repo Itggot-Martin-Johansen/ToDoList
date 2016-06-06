@@ -150,7 +150,7 @@ header > div > nav > div > a:hover
 
 #create_thread > form > .button
 {
-    background-color: cyan;
+    background-color: #1a1a1a;
     border: none;
     color: #fefefe;
     padding: 15px 80px;
