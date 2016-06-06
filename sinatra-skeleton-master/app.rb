@@ -68,4 +68,9 @@ class App < Sinatra::Base
 
     erb :'about/about'
   end
+
+  post '/create_thread' do
+
+    erb :'create_thread/create_thread'
+  end
 end
