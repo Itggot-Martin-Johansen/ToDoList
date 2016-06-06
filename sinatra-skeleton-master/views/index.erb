@@ -1,10 +1,19 @@
-<a class="active"></a>
-
 <main>
   <div id="pic">
-    <img src="/img/dasd.jpg" alt="Biggest Sport Event" style="width:100%;height:220px;">
+    <img src="/img/dasd.jpg" alt="Biggest Sport Event">
   </div>
+
+  <% if session[:user_id] != nil %>
+  <div id="create_thread">
+    <form action="/create_thread" method="post">
+      <button class="button">Create Thread</button>
+    </form>
+  </div>
+  <% end %>
+
+
   <div id="splash">
+
     <div>
       LeamHack
 
